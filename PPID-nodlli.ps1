@@ -13,12 +13,8 @@ function PPID-Spoof{
 .PARAMETER spawnTo
   Path to the process you want your payload to masquerade as.
 
-.PARAMETER dllPath
-  Dll for the backdoor.
-  If powershell is running on 64-bits mode, dll has to be 64-bits dll. The same for 32-bits mode.
-
 .EXAMPLE
-  PS> Spoof-Masquerade-Process -ppid 1234 -spawnto "C:\Windows\System32\notepad.exe" -dllpath messagebox.dll
+  PS> Spoof-Masquerade-Process -ppid 1234 -spawnto "C:\Windows\System32\notepad.exe"
 #>
 
   [CmdletBinding()]
