@@ -222,8 +222,8 @@ function PPID-Spoof{
                                         [ref]$SecAttr, 
                                         [ref]$SecAttr, 
                                         0,
-                                        0x08080004, #EXTENDED_STARTUPINFO_PRESENT | CREATE_NO_WINDOW | CREATE_SUSPENDED
-                                        # 0x00080010, # EXTENDED_STARTUPINFO_PRESENT | CREATE_NEW_CONSOLE (This will show the window of the process)
+                                        #0x08080004, #EXTENDED_STARTUPINFO_PRESENT | CREATE_NO_WINDOW | CREATE_SUSPENDED
+                                        0x00080010, # EXTENDED_STARTUPINFO_PRESENT | CREATE_NEW_CONSOLE (This will show the window of the process)
                                         [IntPtr]::Zero, 
                                         $GetCurrentPath, 
                                         [ref] $sInfoEx, 
